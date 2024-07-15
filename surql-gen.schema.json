@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://raw.githubusercontent.com/CiskaLV/surrealdb-client-generator/jsonSchema/surql-gen.schema.json",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+        "schemaFile": {
+            "type": "string"
+        },
+        "surreal": {
+            "type": "string"
+        },
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string"
+        },
+        "ns": {
+            "type": "string"
+        },
+        "db": {
+            "type": "string"
+        },
+        "outputFolder": {
+            "type": "string"
+        },
+        "generateClient": {
+            "type": "boolean"
+        },
+        "lib": {
+            "type": "string",
+            "enum": ["surrealdb.js", "surrealdb.node"],
+            "default": "surrealdb.js"
+        }
+    }
+}
